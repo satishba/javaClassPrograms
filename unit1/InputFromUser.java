@@ -1,3 +1,5 @@
+package javaClassPrograms.unit1;
+
 import java.util.Scanner;
 
 public class InputFromUser {

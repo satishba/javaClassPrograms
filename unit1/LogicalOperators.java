@@ -1,3 +1,5 @@
+package javaClassPrograms.unit1;
+
 public class LogicalOperators {
     public static void main(String args []){
         boolean example1=true,example2=false;

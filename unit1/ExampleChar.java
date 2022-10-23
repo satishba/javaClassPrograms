@@ -1,3 +1,5 @@
+package javaClassPrograms.unit1;
+
 public class ExampleChar {
     public static void main(String args []){
         char example1='x';

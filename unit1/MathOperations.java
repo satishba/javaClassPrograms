@@ -1,3 +1,5 @@
+package javaClassPrograms.unit1;
+
 public class MathOperations {
     public static void main(String args[]){
         int exampleInt1=10,exampleInt2=20;

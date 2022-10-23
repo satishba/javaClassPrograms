@@ -1,3 +1,5 @@
+package javaClassPrograms.unit1;
+
 public class ExampleFloating {
     public static void main(String args []){
         float example1=10.5f;

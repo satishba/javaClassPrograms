@@ -1,15 +1,17 @@
+package javaClassPrograms.unit1;
+
 import java.awt.*;
 
 public class ExampleArray {
-    static void main(String args[]){
-    int nums[];
-    nums = new int[4];
-    nums[0]=10;
-    nums[1]=20;
-    nums[3]=30;
-    nums[4]=40;
+    public static void main(String args[]){
+    int marks[];
+    marks = new int[4];
+    marks[0]=10;
+    marks[1]=20;
+    marks[2]=30;
+    marks[3]=40;
 
-    System.out.println("The second element in the array is"+nums[1]);
+    System.out.println("The second element in the array is"+marks[1]);
     double temprature[];
     temprature = new double[3];
     temprature[0]=20.1;

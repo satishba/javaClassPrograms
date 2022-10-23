@@ -1,3 +1,5 @@
+package javaClassPrograms.unit1;
+
 public class BitWiseOperatrs {
     public static  void main(String args[]){
         int example1=-4;
