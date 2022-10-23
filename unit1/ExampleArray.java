@@ -10,8 +10,8 @@ public class ExampleArray {
     marks[1]=20;
     marks[2]=30;
     marks[3]=40;
-
-    System.out.println("The second element in the array is"+marks[1]);
+    float averge = (marks[0]+marks[1]+marks[2]+marks[3])/4.0f;
+    System.out.println("The average marks is "+marks[1]);
     double temprature[];
     temprature = new double[3];
     temprature[0]=20.1;
@@ -31,6 +31,8 @@ public class ExampleArray {
 
     float twoD1 [] [] = { {1.0f,2.0f},{3.0f,4.0f}};
 
+    char name [] = {'J','A','V','A'};
+    System.out.print(name[0] + "" + name[1] + "" + name[2] +""+ name[3]);
 
 
     }
