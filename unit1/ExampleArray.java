@@ -1,17 +1,22 @@
 package javaClassPrograms.unit1;
 
-import java.awt.*;
-
 public class ExampleArray {
     public static void main(String args[]){
     int marks[];
     marks = new int[4];
-    marks[0]=10;
+    int i=0;
+    marks[i]=10;
     marks[1]=20;
     marks[2]=30;
     marks[3]=40;
-    float averge = (marks[0]+marks[1]+marks[2]+marks[3])/4.0f;
-    System.out.println("The average marks is "+marks[1]);
+
+
+    int tempArr[] = new int[4];
+    tempArr[0]=10;
+    int tempArr2[]= {1,3,5,6};
+
+    float average = (marks[0]+marks[1]+marks[2]+marks[3])/4.0f;
+    System.out.println("The average marks is "+marks[5]);
     double temprature[];
     temprature = new double[3];
     temprature[0]=20.1;
