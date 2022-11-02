@@ -8,7 +8,7 @@ public class basicIfExample {
             System.out.println("The boolean is true");
         }
         value = false;
-        if(!value){
+        if(value){
             System.out.println("The boolean is false");
         }
     }

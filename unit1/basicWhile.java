@@ -10,6 +10,7 @@ public class basicWhile {
         exampleInt = inputobj.nextInt();
         while (exampleInt < 10) {
             System.out.println("Number is " + exampleInt);
+            exampleInt = exampleInt + 1;
         }
     }
 }

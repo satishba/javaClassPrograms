@@ -11,7 +11,7 @@ public class IfElseExample {
         System.out.println("Enter the marks scored in Java");
         studentMarksJava = inputObj.nextInt();
         boolean compare = studentMarksAdc > studentMarksJava;
-        if(compare){
+        if(studentMarksAdc > studentMarksJava){
             System.out.println("Student scored more in ADC");
         }
         else {
