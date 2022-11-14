@@ -1,5 +1,5 @@
 package javaClassPrograms.unit2;
-class userInputwithSetGetMethods {
+class userConsolewithSetGetMethods {
     int cokesAvailable, waterAvailable;
     float cokePrice, waterPrice;
 
@@ -41,15 +41,15 @@ class userInputwithSetGetMethods {
 
 public class vendingClassWithMehods {
     public static void main(String[] args) {
-        userInputwithSetGetMethods dsceVending = new userInputwithSetGetMethods();
-        dsceVending.setCokesAvailable(10);
-        dsceVending.setWaterAvailable(20);
-        dsceVending.setCokePrice(20.0f);
-        dsceVending.setWaterPrice(30.0f);
+        userConsolewithSetGetMethods dsceEEEVending = new userConsolewithSetGetMethods();
+        dsceEEEVending.setCokesAvailable(10);
+        dsceEEEVending.setWaterAvailable(20);
+        dsceEEEVending.setCokePrice(20.0f);
+        dsceEEEVending.setWaterPrice(30.0f);
 
         System.out.print("Items available are");
-        System.out.println("Cokes : " + dsceVending.getCokesAvailable() + "at " + dsceVending.getCokePrice());
-        System.out.println("Cokes : " + dsceVending.getWaterAvailable() + "at " + dsceVending.getWaterPrice());
+        System.out.println("Cokes : " + dsceEEEVending.getCokesAvailable() + "at " + dsceEEEVending.getCokePrice());
+        System.out.println("Cokes : " + dsceEEEVending.getWaterAvailable() + "at " + dsceEEEVending.getWaterPrice());
 
     }
 }
