@@ -6,7 +6,7 @@ class Student{
 
     int usn;
     char sem;
-    int marks[] = new int[8];
+    int marks[] = new int[6];
 
 //    <TO DO:Add Constructor to initialize sem and usn>
 
@@ -18,8 +18,8 @@ class Student{
 //    <TO DO : Add constructor with no intializations>
 
     Student(){
-        this.usn;
-        this.sem;
+        int usn=this.usn;
+        int sem=this.sem;
     }
 
     public void setSem() {
@@ -36,7 +36,7 @@ class Student{
 
     public void marks(){
         Scanner sc=new Scanner(System.in);
-        int[] arr=new int[8];
+        int[] arr=new int[6];
         for(int i=0;i<6;i++){
             arr[i]=sc.nextInt();
         }
@@ -73,6 +73,7 @@ public class assignemntOne {
 
 //    <TO DO: Print the max marks of both students>
         eeeStudent1.marks();
+        int[] arr=new int[6];
         int max1=arr[0];
         for(int i=0;i<8;i++){
             if(arr[i]>max1)
