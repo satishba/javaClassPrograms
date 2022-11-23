@@ -1,56 +1,92 @@
-
-
 import java.util.Scanner;
 
-class Student{
+class Student {
 
     int usn;
     char sem;
     int marks[] = new int[8];
-    <TO DO:Add Constructor to initialize sem and usn>
-    <TO DO : Add constructor with no intializations>
+
+    //Constructor to initialize sem and usn
+    Student(int USN, char SEM) {
+        this.usn = USN;
+        this.sem = SEM;
+    }
+
+    // constructor with no intialization
+    Student() {
+    }
+
+    public void setUsn() {
+        Scanner inobj = new Scanner(System.in);
+        int usn = inobj.nextInt();
+        this.usn=usn;
+    }
+
     public void setSem() {
-        Scanner sc  = new Scanner(System.in);
-        this.sem=sc.next().charAt(0);
+        Scanner inobj = new Scanner(System.in);
+        char sem = inobj.next().charAt(0);
+        this.sem=sem;
     }
-    public void setUsn(int usn) {
-        Scanner sc  = new Scanner(System.in);
-        this.usn=sc.nextInt();
-
+    // ADD METHOD TO SET MARKS
+    public void setMarks() {
+        Scanner inobj = new Scanner(System.in);
+        for (int i = 0; i < this.marks.length; i++) {
+            this.marks[i] = inobj.nextInt();
+        }
     }
 
-<TO DO : ADD METHOD TO SET MARKS>
-
-    public int[] getMarks() {
-        return marks;
+    public int getUsn() {
+        return usn;
     }
 
     public char getSem() {
         return sem;
     }
 
-    public int getUsn() {
-        return usn;
+    public int[] getMarks() {
+        return marks;
     }
-    <TO DO: Add a method to find maximum marks>
-
+    //to find maximum marks
+    public int getMaxMark() {
+        int m = 0;
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] > m) {
+                m = marks[i];
+            }
+        }
+        return m;
+    }
 }
-
-
-public class assignemntOne {
+public class todo{
     public static void main(String[] args) {
-    Student eeeStudent1 = new Student();
-    int usn;
-    int sem;
-    Student eeeStudent2 = new Student(usn,sem);
-    <TO DO: Assign marks to students>
+        Student eeestudent1;
+        eeestudent1=new Student();
+        System.out.println("assign usn and semester to student 1");
+        eeestudent1.setUsn();
+        eeestudent1.setSem();
+        Student eeestudent2 = new Student(123,'v');
+        //Assign marks to students
+        System.out.println("assign marks to student 1");
+        eeestudent1.setMarks();
+        System.out.println("assign marks to student 2");
+        eeestudent2.setMarks();
+        //Print the max marks of both students
+        System.out.println("student 1 maximum marks"+eeestudent1.getMaxMark());
+        System.out.println("student 2 maximum marks"+eeestudent2.getMaxMark());
+        //Take input of a subject index from user
+        Scanner inobj=new Scanner(System.in);
+        System.out.println("Input subject index");
+        int index = inobj.nextInt();
+        //print which student has more marks in that subject
+        if(eeestudent1.marks[index]>eeestudent2.marks[index])
+        {
+            System.out.println("Student 1 scored more ="+eeestudent1.marks[index]);
+        } else if (eeestudent1.marks[index]<eeestudent2.marks[index]) {
+            System.out.println("Student 2 scored more ="+eeestudent2.marks[index]);
 
-    <TO DO: Print the max marks of both students>
-
-    <TO DO: Take input of a subject index from user and print
-    which student has more marks in that subject>
-
+        }
+        else
+            System.out.println("both scored equal ="+eeestudent1.marks[index]);
 
     }
 }
-
