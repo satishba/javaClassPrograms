@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Student{
+/*class Student{
 
     int usn;
     char sem;
@@ -54,3 +54,4 @@ public class assignemntOne {
     }
 }
 
+*/

@@ -5,6 +5,7 @@ class testThread implements Runnable {
 
     testThread() {
         t = new Thread(this, "Test Thread");
+
         System.out.println("Thread create");
     }
 

@@ -1,4 +1,4 @@
-package javaClassPrograms.unit1;
+package unit1;
 
 import java.util.*;
 public class basicCalc {

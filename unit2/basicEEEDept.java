@@ -1,4 +1,4 @@
-package javaClassPrograms.unit2;
+package unit2;
 
 import java.util.Scanner;
 
@@ -53,7 +53,7 @@ class Student{
     }
 
 
-    int compare(Student temp){
+    void compare(Student temp){
         float average1=0.0f,average2=0.0f;
         for(int x:marks){
             average1=average1+x;
@@ -80,7 +80,7 @@ class StudentWithMakrs{
 
     public void setMarks() {
         for(int i=0;i<8;i++){
-            this.marks[i]=input.nextInt();
+            //this.marks[i]=input.nextInt();
         }
     }
 
@@ -108,7 +108,7 @@ public class basicEEEDept {
         for(int x:marks){
             marks[i++]=input.nextInt();
         }
-        eeeStudent1.setMarks(marks);
+       // eeeStudent1.setMarks(marks);
 
 
 
